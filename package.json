@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "parallelized discord discrimination seeker",
   "main": "./index.js",
-  "repository": "",
+  "repository": "https://github.com/pacocoursey/6s",
   "license": "MIT",
   "scripts": {
     "start": "node ."

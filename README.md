@@ -1,6 +1,6 @@
-# 6s /səkˈses/
+# 6s [![npm version](https://badge.fury.io/js/6s.svg)](https://badge.fury.io/js/6s)
 
-6s is a small CLI script that will change the username of Discord accounts in hopes of forcing a specific discriminator.
+6s (success */səkˈses/*) is a small CLI script that will change the username of Discord accounts in hopes of forcing a specific discriminator.
 
 ![](screenshot.png)
 
@@ -11,7 +11,7 @@ $ npm install -g 6s
 ```
 ## Usage
 
-You can't currently change the list of discriminators to look for. Coming soon™️.
+You can't currently change the list of discriminators to look for. Coming soon™.
 
 ```
 $ 6s [<files> ...]
