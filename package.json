@@ -1,0 +1,21 @@
+{
+  "name": "6s",
+  "version": "0.0.2",
+  "description": "parallelized discord discrimination seeker",
+  "main": "./index.js",
+  "repository": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "bin": {
+    "6s": "./index.js"
+  },
+  "dependencies": {
+    "cli-table3": "^0.5.1",
+    "discord.js": "^11.3.2",
+    "fs-extra": "^7.0.0",
+    "term-size": "^1.2.0"
+  },
+  "devDependencies": {}
+}
