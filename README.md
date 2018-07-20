@@ -2,7 +2,7 @@
 
 6s (success */səkˈses/*) is a small CLI script that will change the username of Discord accounts in hopes of forcing a specific discriminator.
 
-![](screenshot.png)
+![](https://raw.githubusercontent.com/pacocoursey/6s/master/screenshot.png)
 
 ## Install
 
