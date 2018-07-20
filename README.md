@@ -15,7 +15,7 @@ $ npm install -g 6s
 $ 6s [<files> ...]
 ```
 
-6s takes an array of JSON configuration files and logs into each of them in parallel. Each configuration file should contain a `password` and `token` field:
+6s takes an array of JSON account configuration files and runs each account in parallel. Each configuration file should contain a `password` and `token` field:
 
 ```js
 {
@@ -24,7 +24,7 @@ $ 6s [<files> ...]
 }
 ```
 
-6s will login to Discord with the specified credentials and start seeking desirable discriminators. It will exit when one has been found.
+6s will exit when a desirable discriminator has been found on one of the accounts.
 
 You can't currently change the list of discriminators. At the moment it includes:
 
