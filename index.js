@@ -5,6 +5,7 @@ const path = require('path');
 const Table = require('cli-table3');
 const termSize = require('term-size');
 const Discord = require('discord.js');
+const toMilliseconds = require('@sindresorhus/to-milliseconds');
 const discrims = require('./discriminators.json');
 
 const args = process.argv.splice(2);
@@ -69,10 +70,10 @@ async function test(config, index) {
         process.exit(1);
       } else if (err.message === tooFast) {
         log('Hit set limit. Waiting 30 minutes to retry.', index);
-        await timeout(5 * 60000);
+        await timeout(toMilliseconds({ minutes: 30, seconds: 2 }));
       } else if (err.message === tooMany) {
         log(`Cannot set username to ${user.username}. Re-trying in 10 seconds.`, index);
-        await timeout(5 * 1000);
+        await timeout(toMilliseconds({ seconds: 10 }));
         users.delete(user.id);
       } else {
         log(err, index);
@@ -110,7 +111,7 @@ async function test(config, index) {
     } else {
       log(`Bad discriminator: ${client.user.discriminator}.`, index);
       log('Waiting 30 minutes to retry.', index);
-      await timeout(10 * 60000);
+      await timeout(toMilliseconds({ minutes: 30, seconds: 2 }));
       seek();
     }
 
@@ -124,7 +125,7 @@ async function test(config, index) {
     client.setTimeout(() => {
       log(`Started: ${client.user.username}#${client.user.discriminator}`, index);
       seek();
-    }, 10 * 1000);
+    }, toMilliseconds({ seconds: 10 }));
   });
 
   client.login(config.token);

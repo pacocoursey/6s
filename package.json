@@ -1,9 +1,18 @@
 {
   "name": "6s",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "parallelized discord discrimination seeker",
   "main": "./index.js",
   "repository": "https://github.com/pacocoursey/6s",
+  "author": "Paco Coursey <paco@pacocoursey.com> (pacocoursey.com)",
+  "keywords": [
+    "discord",
+    "discrim",
+    "discriminator",
+    "username",
+    "tag",
+    "bot"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "node ."
@@ -12,6 +21,7 @@
     "6s": "./index.js"
   },
   "dependencies": {
+    "@sindresorhus/to-milliseconds": "^1.0.0",
     "cli-table3": "^0.5.1",
     "discord.js": "^11.3.2",
     "fs-extra": "^7.0.0",
