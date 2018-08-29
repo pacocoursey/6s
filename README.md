@@ -47,9 +47,3 @@ $ 6s configs/account1.json configs/account2.json configs/account3.json
 ## Disclaimer
 
 There is a **strong** chance that Discord will ban your account for using this tool. I'd recommend buying [Discord Nitro](https://discordapp.com/nitro) if you want your preferred discriminator. That being said, there's nothing against me programming a tool like this. <sup>I think <sup>(hope)</sup></sup>
-
-#
-
-<p align="center">
-  <a href="http://paco.sh"><img src="https://raw.githubusercontent.com/pacocoursey/pacocoursey.github.io/master/footer.png" height="300"></a>
-</p>
